@@ -3,7 +3,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "django-course",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "forwardPorts": [8080],
+  "forwardPorts": [8000],
 
   "features": {
     "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
