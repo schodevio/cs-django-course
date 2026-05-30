@@ -5,7 +5,7 @@
         <article>
             <h3>{{ post.title }}</h3>
             <p>{{ post.content }}</p>
-            <footer><small>By {{ post.author }} on {{ post.created_at }}</small></footer>
+            <footer><small>By {{ post.author }} on {{ post.created_at|date:"F d, Y" }}</small></footer>
         </article>
     {% endfor %}
 {% endblock content %}

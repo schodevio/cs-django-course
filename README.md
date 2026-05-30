@@ -14,4 +14,9 @@ uv run django-admin startproject django_project .
 # Run Django commands
 uv run manage.py runserver
 uv run manage.py startapp blog
+
+uv run manage.py makemigrations
+uv run manage.py migrate
+
+uv run manage.py shell
 ```
