@@ -1,0 +1,21 @@
+:root,
+:host {
+    --pico-nav-link-spacing-vertical: 0.5rem;
+    --pico-nav-link-spacing-horizontal: 1rem;
+}
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    grid-template-areas: "content sidebar";
+    gap: 2rem;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}

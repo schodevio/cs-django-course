@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.indigo.min.css">
+        <link rel="stylesheet" href="{% static "blog/main.css" %}">
+
+        {% if title %}
+            <title>Blog | {{ title }}</title>
+        {% else %}
+            <title>Blog</title>
+        {% endif %}
+    </head>
+    <body class="container">
+        <nav>
+            <ul>
+                <li><strong>Django Blog</strong></li>
+                <li><a href="{% url 'blog-home' %}">Home</a></li>
+                <li><a href="{% url 'blog-about' %}">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" role="button" class="secondary outline">Sign In</a></li>
+                <li><a href="#" role="button" class="primary">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <main class="layout">
+            <div class="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            <div class="sidebar">
+                <article>
+                    <a href="#">Latest Posts</a>
+                    <hr />
+                    <a href="#">Announcements</a>
+                    <hr />
+                    <a href="#">Calendars</a>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>
