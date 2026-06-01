@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <div class="content-section">
+        <form
+            action="{% url 'users-create' %}"
+            method="POST"
+        >
+            {% csrf_token %}
+            <fieldset>
+                <h2>Join Today</h2>
+                {{ form.as_p }}
+            </fieldset>
+
+            <button class="primary" type="submit">Register</button>
+        </form>
+
+        <div>
+            <p style="text-align: center;">
+                Already have an account?
+                <a href="#">Sign In</a>
+            </p>
+        </div>
+    </div>
+{% endblock content %}

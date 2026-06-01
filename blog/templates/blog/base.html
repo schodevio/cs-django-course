@@ -24,14 +24,22 @@
             </ul>
             <ul>
                 <li><a href="#" role="button" class="secondary outline">Sign In</a></li>
-                <li><a href="#" role="button" class="primary">Sign Up</a></li>
+                <li><a href="{% url 'users-new' %}" role="button" class="primary">Sign Up</a></li>
             </ul>
         </nav>
 
         <main class="layout">
             <div class="content">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert {{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
                 {% block content %}
-                {% endblock %}
+                {% endblock content %}
             </div>
 
             <div class="sidebar">

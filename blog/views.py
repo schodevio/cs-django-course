@@ -15,7 +15,6 @@ posts = [
         "created_at": "August 28, 2018"
     }
 ]
-# Create your views here.
 
 
 def home(request):
