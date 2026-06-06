@@ -17,6 +17,7 @@
         "charliermarsh.ruff",
         "ms-python.python",
         "ms-toolsai.jupyter",
+        "sleistner.vscode-fileutils",
         "tamasfe.even-better-toml"
       ]
     }

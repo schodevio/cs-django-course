@@ -23,8 +23,19 @@
                 <li><a href="{% url 'blog-about' %}">About</a></li>
             </ul>
             <ul>
-                <li><a href="#" role="button" class="secondary outline">Sign In</a></li>
-                <li><a href="{% url 'users-new' %}" role="button" class="primary">Sign Up</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'users-profile' %}">Profile</a></li>
+
+                    <li>
+                        <form method="POST" action="{% url 'logout' %}">
+                            {% csrf_token %}
+                            <button type="submit" class="secondary outline">Logout</button>
+                        </form>
+                    </li>
+                {% else %}
+                    <li><a href="{% url 'login' %}" role="button" class="secondary outline">Sign In</a></li>
+                    <li><a href="{% url 'users-new' %}" role="button" class="primary">Sign Up</a></li>
+                {% endif %}
             </ul>
         </nav>
 

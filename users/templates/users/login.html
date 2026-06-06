@@ -2,23 +2,20 @@
 
 {% block content %}
     <div class="content-section">
-        <form
-            action="{% url 'users-create' %}"
-            method="POST"
-        >
+        <form method="POST">
             {% csrf_token %}
             <fieldset>
-                <h2>Join Today</h2>
+                <h2>Hello Again</h2>
                 {{ form.as_p }}
             </fieldset>
 
-            <button class="primary" type="submit">Register</button>
+            <button class="primary" type="submit">Login</button>
         </form>
 
         <div>
             <p style="text-align: center;">
-                Already have an account?
-                <a href="{% url 'login' %}">Sign In</a>
+                Don't have an account?
+                <a href="{% url 'users-new' %}">Sign Up</a>
             </p>
         </div>
     </div>

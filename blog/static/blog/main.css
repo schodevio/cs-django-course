@@ -2,6 +2,8 @@
 :host {
     --pico-nav-link-spacing-vertical: 0.5rem;
     --pico-nav-link-spacing-horizontal: 1rem;
+    --pico-form-element-spacing-vertical: 0.5rem;
+    --pico-form-element-spacing-horizontal: 1rem;
 }
 
 /* --- LAYOUT --- */
