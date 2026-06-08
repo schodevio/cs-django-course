@@ -4,6 +4,7 @@ uv init
 
 # Add dependency
 uv add django
+uv add pillow
 
 # Sync dependencies
 uv sync

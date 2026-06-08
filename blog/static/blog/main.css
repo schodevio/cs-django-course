@@ -57,3 +57,21 @@ form {
         color: #721c24;
     }
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .profile__info {
+        display: flex;
+        flex-direction: column;
+    }
+}
