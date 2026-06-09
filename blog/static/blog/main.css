@@ -31,6 +31,10 @@
     grid-area: sidebar;
 }
 
+nav form button[type="submit"] {
+    margin-bottom: 0 !important;
+}
+
 /* --- ALERTS --- */
 .alert {
     padding: 1rem;
@@ -62,6 +66,7 @@ form {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 3rem;
 
     img {
         width: 150px;
@@ -73,5 +78,21 @@ form {
     .profile__info {
         display: flex;
         flex-direction: column;
+    }
+}
+
+.post {
+    .post__avatar {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .post__footer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
 }

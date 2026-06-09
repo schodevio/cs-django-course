@@ -3,7 +3,7 @@
 {% block content %}
   <section>
     <div class="container">
-      <h1>Profile</h1>
+      <h1>My Profile</h1>
 
       <div class="profile">
         <img src="{{ user.profile.image.url }}" alt="Profile Picture" class="profile__pic">
@@ -13,6 +13,22 @@
           <p><strong>Email:</strong> {{ user.email }}</p>
         </div>
       </div>
+
+      <h2>Update Profile</h2>
+
+      <form
+        method="POST"
+        enctype="multipart/form-data"
+        action="{% url 'users-profile-update' %}"
+      >
+        {% csrf_token %}
+        <fieldset>
+          {{ u_form.as_p }}
+          {{ p_form.as_p }}
+        </fieldset>
+
+        <button class="primary" type="submit">Update</button>
+      </form>
     </div>
   </section>
 {% endblock content %}
