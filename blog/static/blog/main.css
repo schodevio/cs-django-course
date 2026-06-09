@@ -31,8 +31,16 @@
     grid-area: sidebar;
 }
 
-nav form button[type="submit"] {
+button[type="submit"],
+a[role="button"] {
     margin-bottom: 0 !important;
+}
+
+.form {
+    .form__actions {
+        display: flex;
+        gap: 1rem;
+    }
 }
 
 /* --- ALERTS --- */
@@ -94,5 +102,11 @@ form {
         align-items: center;
         gap: 0.5rem;
         margin-top: 1rem;
+    }
+
+    .post__actions {
+        margin-left: auto;
+        display: flex;
+        gap: 1rem;
     }
 }

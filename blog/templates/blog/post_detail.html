@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <article class="post">
+        <h3>{{ object.title }}</h3>
+        <p>{{ object.content }}</p>
+
+        <footer class="post__footer">
+            <img src="{{ object.author.profile.image.url }}" alt="Profile Picture" class="post__avatar">
+            <span>{{ object.author }} on {{ object.created_at|date:"F d, Y" }}</span>
+
+            {% if user == object.author %}
+                <div class="post__actions">
+                    <a href="{% url 'blog-edit-post' object.pk %}" class="secondary">Edit</a>
+                    <a href="{% url 'blog-delete-post' object.pk %}" class="error">Delete</a>
+                </div>
+            {% endif %}
+        </footer>
+    </article>
+{% endblock content %}
