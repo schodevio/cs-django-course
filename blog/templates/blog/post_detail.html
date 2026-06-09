@@ -7,7 +7,10 @@
 
         <footer class="post__footer">
             <img src="{{ object.author.profile.image.url }}" alt="Profile Picture" class="post__avatar">
-            <span>{{ object.author }} on {{ object.created_at|date:"F d, Y" }}</span>
+            <span>
+                <a href="{% url 'blog-user-posts' object.author.username %}">{{ object.author }}</a>
+                on {{ object.created_at|date:"F d, Y" }}
+            </span>
 
             {% if user == object.author %}
                 <div class="post__actions">

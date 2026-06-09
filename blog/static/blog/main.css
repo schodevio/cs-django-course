@@ -110,3 +110,9 @@ form {
         gap: 1rem;
     }
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}

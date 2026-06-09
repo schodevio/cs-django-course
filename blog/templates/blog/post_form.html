@@ -5,11 +5,11 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset>
-                <h2>Blog Post</h2>
+                <h2>{{ title }}</h2>
                 {{ form.as_p }}
             </fieldset>
 
-            <button class="primary" type="submit">Post</button>
+            <button class="primary" type="submit">{{ button }}</button>
         </form>
     </div>
 {% endblock content %}

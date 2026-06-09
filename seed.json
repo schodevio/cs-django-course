@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Getting Started with Rails",
+    "content": "A beginner-friendly guide to setting up your first Ruby on Rails application and understanding the basic structure.",
+    "user_id": 1
+  },
+  {
+    "title": "Vue.js Tips and Tricks",
+    "content": "Some practical tips to improve your productivity when working with Vue.js in real-world projects.",
+    "user_id": 2
+  },
+  {
+    "title": "Scaling Web Applications",
+    "content": "Key strategies for scaling modern web applications efficiently and avoiding common pitfalls.",
+    "user_id": 3
+  },
+  {
+    "title": "Understanding MVC Architecture",
+    "content": "An overview of the Model-View-Controller pattern and how it is implemented in web frameworks.",
+    "user_id": 1
+  },
+  {
+    "title": "Deploying to AWS",
+    "content": "A step-by-step introduction to deploying applications on AWS using modern DevOps practices.",
+    "user_id": 2
+  },
+  {
+    "title": "API Design Best Practices",
+    "content": "Learn how to design clean, maintainable, and scalable APIs for your applications.",
+    "user_id": 3
+  },
+  {
+    "title": "Testing in Rails",
+    "content": "Why testing matters and how to effectively write tests in a Ruby on Rails application.",
+    "user_id": 1
+  },
+  {
+    "title": "Frontend Performance Optimization",
+    "content": "Techniques to improve frontend performance and deliver faster user experiences.",
+    "user_id": 2
+  },
+  {
+    "title": "Database Design Fundamentals",
+    "content": "Core principles of designing efficient and normalized relational databases.",
+    "user_id": 3
+  },
+  {
+    "title": "Background Jobs with Sidekiq",
+    "content": "How to use Sidekiq to process background jobs efficiently in Rails applications.",
+    "user_id": 1
+  },
+  {
+    "title": "Modern JavaScript Patterns",
+    "content": "Explore modern JavaScript patterns that make your code cleaner and more maintainable.",
+    "user_id": 2
+  },
+  {
+    "title": "Authentication in Web Apps",
+    "content": "Implementing secure authentication systems in modern web applications.",
+    "user_id": 3
+  },
+  {
+    "title": "Microservices vs Monolith",
+    "content": "A comparison of microservices and monolithic architectures with pros and cons.",
+    "user_id": 1
+  },
+  {
+    "title": "State Management in Vue",
+    "content": "How to manage application state effectively using Vuex or Pinia.",
+    "user_id": 2
+  },
+  {
+    "title": "CI/CD Pipelines",
+    "content": "Introduction to continuous integration and continuous deployment pipelines.",
+    "user_id": 3
+  },
+  {
+    "title": "Optimizing SQL Queries",
+    "content": "Learn how to improve database performance by optimizing your SQL queries.",
+    "user_id": 1
+  },
+  {
+    "title": "Web Security Essentials",
+    "content": "Important security practices every web developer should know.",
+    "user_id": 2
+  },
+  {
+    "title": "Docker for Developers",
+    "content": "How Docker simplifies development and deployment workflows.",
+    "user_id": 3
+  },
+  {
+    "title": "Progressive Web Apps",
+    "content": "Building fast, reliable, and engaging progressive web applications.",
+    "user_id": 1
+  },
+  {
+    "title": "Clean Code Principles",
+    "content": "Best practices for writing clean, readable, and maintainable code.",
+    "user_id": 2
+  }
+]
