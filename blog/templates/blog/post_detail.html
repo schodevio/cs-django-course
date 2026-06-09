@@ -8,14 +8,14 @@
         <footer class="post__footer">
             <img src="{{ object.author.profile.image.url }}" alt="Profile Picture" class="post__avatar">
             <span>
-                <a href="{% url 'blog-user-posts' object.author.username %}">{{ object.author }}</a>
+                <a href="{% url 'blog_user_posts' object.author.username %}">{{ object.author }}</a>
                 on {{ object.created_at|date:"F d, Y" }}
             </span>
 
             {% if user == object.author %}
                 <div class="post__actions">
-                    <a href="{% url 'blog-edit-post' object.pk %}" class="secondary">Edit</a>
-                    <a href="{% url 'blog-delete-post' object.pk %}" class="error">Delete</a>
+                    <a href="{% url 'blog_edit_post' object.pk %}" class="secondary">Edit</a>
+                    <a href="{% url 'blog_delete_post' object.pk %}" class="error">Delete</a>
                 </div>
             {% endif %}
         </footer>

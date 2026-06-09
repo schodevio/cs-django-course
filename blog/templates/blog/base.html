@@ -19,13 +19,13 @@
         <nav>
             <ul>
                 <li><strong>Django Blog</strong></li>
-                <li><a href="{% url 'blog-home' %}">Home</a></li>
-                <li><a href="{% url 'blog-about' %}">About</a></li>
+                <li><a href="{% url 'blog_home' %}">Home</a></li>
+                <li><a href="{% url 'blog_about' %}">About</a></li>
             </ul>
             <ul>
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'blog-new-post' %}">New Post</a></li>
-                    <li><a href="{% url 'users-profile' %}">Profile</a></li>
+                    <li><a href="{% url 'blog_new_post' %}">New Post</a></li>
+                    <li><a href="{% url 'users_profile' %}">Profile</a></li>
 
                     <li>
                         <form method="POST" action="{% url 'logout' %}">
@@ -35,7 +35,7 @@
                     </li>
                 {% else %}
                     <li><a href="{% url 'login' %}" role="button" class="secondary outline">Sign In</a></li>
-                    <li><a href="{% url 'users-new' %}" role="button" class="primary">Sign Up</a></li>
+                    <li><a href="{% url 'users_new' %}" role="button" class="primary">Sign Up</a></li>
                 {% endif %}
             </ul>
         </nav>

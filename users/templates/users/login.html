@@ -12,10 +12,14 @@
             <button class="primary" type="submit">Login</button>
         </form>
 
-        <div>
+        <div style="margin-top: 1rem;">
+            <p style="text-align: center;">
+                <a href="{% url 'password_reset' %}">Forgot Password?</a>
+            </p>
+
             <p style="text-align: center;">
                 Don't have an account?
-                <a href="{% url 'users-new' %}">Sign Up</a>
+                <a href="{% url 'users_new' %}">Sign Up</a>
             </p>
         </div>
     </div>

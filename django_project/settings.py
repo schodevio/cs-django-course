@@ -124,4 +124,23 @@ MEDIA_URL = "/media/"
 
 # Custom settings
 LOGIN_URL = "login"
-LOGIN_REDIRECT_URL = "blog-home"
+LOGIN_REDIRECT_URL = "blog_home"
+
+# Email backend for development
+EMAIL_BACKEND = "users.console_email_backend.ConsoleEmailBackend"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        },
+    },
+    "loggers": {
+        "users.console_email_backend": {
+            "handlers": ["console"],
+            "level": "INFO",
+        },
+    },
+}

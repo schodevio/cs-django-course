@@ -3,7 +3,7 @@
 {% block content %}
     <div class="content-section">
         <form
-            action="{% url 'users-create' %}"
+            action="{% url 'users_create' %}"
             method="POST"
         >
             {% csrf_token %}
